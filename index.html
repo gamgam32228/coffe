@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1366, height=768">
+  <title>Меню кофейни</title>
+  <style>
+    html, body {
+      width: 1366px;
+      height: 768px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f4f1ed 60%, #c8b6a6 60%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu {
+      width: 1200px;
+      height: 700px;
+      background-color: #ffffff;
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      background-image:
+        url('https://img.icons8.com/ios/50/coffee.png'),
+        url('https://img.icons8.com/ios/40/coffee-to-go.png'),
+        url('https://img.icons8.com/ios/30/turkish-coffee.png'),
+        url('https://img.icons8.com/ios/40/coffee-beans.png'),
+        url('https://img.icons8.com/ios/48/coffee-pot.png'),
+        url('https://img.icons8.com/ios/38/coffee-machine.png'),
+        url('https://img.icons8.com/ios/36/coffee-cup.png'),
+        url('https://img.icons8.com/ios/45/french-press.png'),
+        url('https://img.icons8.com/ios/34/coffee.png'),
+        url('https://img.icons8.com/ios/42/barista.png');
+      background-repeat: no-repeat;
+      background-position:
+        50px 50px,
+        1100px 70px,
+        400px 500px,
+        100px 600px,
+        200px 200px,
+        1000px 500px,
+        300px 250px,
+        850px 250px,
+        450px 600px,
+        700px 120px;
+      background-size:
+        40px,
+        30px,
+        25px,
+        28px,
+        30px,
+        26px,
+        24px,
+        26px,
+        22px,
+        24px;
+      opacity: 0.98;
+    }
+    .header {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .header h1 {
+      font-size: 24px;
+      margin-bottom: 0;
+      color: #444;
+    }
+    .header p {
+      margin: 0;
+      font-size: 80px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      color: #2c2c2c;
+    }
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+    .section {
+      width: 30%;
+    }
+    .section h2 {
+      font-size: 20px;
+      border-bottom: 2px solid #d6ccc2;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+    }
+    .item-name {
+      font-weight: bold;
+    }
+    .item-price {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="header">
+      <p>Street Cofee</p>
+      <h1>МЕНЮ</h1>
+    </div>
+    <div class="sections">
+      <div class="section">
+        <h2>КЛАССИКА</h2>
+        <div class="item"><span class="item-name">Эспрессо</span><span class="item-price">35 мл - 100Р</span></div>
+        <div class="item"><span class="item-name">Американо</span><span class="item-price">200/300 мл - 120/140Р</span></div>
+        <div class="item"><span class="item-name">Капучино</span><span class="item-price">200/300 мл - 150/180Р</span></div>
+        <div class="item"><span class="item-name">Латте</span><span class="item-price">300/400 мл - 180/210Р</span></div>
+        <div class="item"><span class="item-name">Флэт Уайт</span><span class="item-price">200 мл - 160Р</span></div>
+        <div class="item"><span class="item-name">Раф</span><span class="item-price">300/400 мл - 200/220Р</span></div>
+        <div class="item"><span class="item-name">Мокко</span><span class="item-price">300/400 мл - 190/210Р</span></div>
+      </div>
+      <div class="section">
+        <h2>ЧАЙ</h2>
+        <div class="item"><span class="item-name">Пряный чай латте</span><span class="item-price">300 мл - 200Р</span></div>
+        <div class="item"><span class="item-name">Облепиха-маракуйя</span><span class="item-price">300 мл - 200Р</span></div>
+        <div class="item"><span class="item-name">Чёрная смородина</span><span class="item-price">300 мл - 200Р</span></div>
+        <div class="item"><span class="item-name">Малина-клубника</span><span class="item-price">300 мл - 200Р</span></div>
+      </div>
+      <div class="section">
+        <h2>ХОЛОДНЫЙ КОФЕ</h2>
+        <div class="item"><span class="item-name">Bumble</span><span class="item-price">300/500 мл - 140/170Р</span></div>
+        <div class="item"><span class="item-name">Ice Latte</span><span class="item-price">300/500 мл - 140/170Р</span></div>
+        <div class="item"><span class="item-name">Espresso Tonic</span><span class="item-price">300/500 мл - 140/170Р</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
